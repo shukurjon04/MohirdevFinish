@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: factory
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    database: postgresql
+  datasource:
+    url: jdbc:postgresql://localhost:5432/small_factory_app_spring
+    password: root
+    username: postgres
+  token:
+    jwt:
+      secret:
+        key:  efuherbgghrggnjgkdgjfwroqwriqpwroiweorhwefubsndfbkdcnsghgr
+  sql:
+    init:
+      mode: always
+server:
+  port: 8080
